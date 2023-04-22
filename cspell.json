@@ -4,8 +4,10 @@
     "dictionaryDefinitions": [],
     "dictionaries": [],
     "words": [
+        "actix",
         "Leonora",
         "Orendorff",
+        "serde",
         "Tindall"
     ],
     "ignoreWords": [],
