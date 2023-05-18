@@ -10,7 +10,8 @@ struct Arguments {
 }
 
 fn main() {
-    println!("Hello, world!");
+    let args = parse_args();
+    println!("{:?}", args);
 }
 
 fn print_usage() {
@@ -23,7 +24,7 @@ fn parse_args() -> Arguments {
     if args.len() != 4 {
         print_usage();
         eprintln!("{} wrong number of arguments: expected 4, got {}.",
-    "Error:".red().bold(), args.len());
+    "error:".red().bold(), args.len());
     std::process::exit(1);
     }
 
